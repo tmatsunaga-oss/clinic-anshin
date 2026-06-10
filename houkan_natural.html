@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ひだまり訪問看護ステーション ｜ 住み慣れたわが家で、安心の療養を</title>
+<meta name="description" content="ひだまり訪問看護ステーション。看護師・理学療法士がご自宅へ訪問し、医療処置・健康管理・リハビリ・緩和ケア・認知症ケアまで、ご本人とご家族に寄り添います。医療保険・介護保険対応。【サンプルサイト】">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#5a9b6b;--green-d:#3f7a4f;--green-l:#86c094;--cream:#fbfaf4;--tint:#eef5ec;--peach:#f6e3d4;--bg:#fffdf9;--ink:#41463f;--ink2:#7e857a;--line:#e8eee2;--gold:#d9a648}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:"Zen Maru Gothic",sans-serif;background:var(--bg);color:var(--ink);line-height:2;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.out{font-family:"Outfit",sans-serif}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 26px;width:100%}
+header{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 30px;transition:.4s}
+header.scrolled{background:rgba(255,253,249,.95);backdrop-filter:blur(10px);box-shadow:0 6px 22px -16px rgba(63,122,79,.5)}
+.logo{display:flex;align-items:center;gap:10px}.logo .ic{width:38px;height:38px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center}
+.logo .nm{font-weight:900;font-size:18px;color:var(--green-d)}.logo .sub{font-size:10px;color:var(--ink2)}
+nav{display:flex;gap:20px;align-items:center}nav a{font-size:13px;font-weight:700;color:var(--ink);transition:.3s}nav a:hover{color:var(--green)}
+.tel-btn{background:var(--green);color:#fff!important;padding:9px 18px;border-radius:99px;font-weight:800;font-size:13px;box-shadow:0 8px 16px -8px rgba(90,155,107,.8)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:60}.burger span{width:25px;height:3px;background:var(--green);border-radius:3px}
+.btn-lg{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;padding:17px 34px;border-radius:99px;font-weight:800;font-size:16px;box-shadow:0 14px 28px -12px rgba(90,155,107,.9);transition:.3s}.btn-lg:hover{transform:translateY(-3px)}
+.btn-line{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--green);color:var(--green-d);padding:15px 28px;border-radius:99px;font-weight:800;font-size:15px;background:#fff}
+
+.hero{position:relative;padding:124px 0 70px;background:radial-gradient(circle at 86% 16%,var(--peach),transparent 46%),radial-gradient(circle at 10% 90%,var(--tint),transparent 50%),var(--cream);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.hero .badge{display:inline-block;background:#fff;color:var(--green-d);font-weight:800;font-size:13px;padding:7px 16px;border-radius:99px;margin-bottom:18px;box-shadow:0 8px 18px -12px rgba(63,122,79,.5)}
+.hero h1{font-size:clamp(29px,5.4vw,48px);font-weight:900;line-height:1.5;color:var(--green-d)}
+.hero h1 .hl{color:var(--green);position:relative}
+.hero p.lead{margin-top:18px;font-size:16px;color:var(--ink2);max-width:470px}
+.hero .acts{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-art{position:relative}
+.hero-art .ph{aspect-ratio:4/4.4;border-radius:30px 30px 30px 90px;overflow:hidden;box-shadow:0 34px 60px -30px rgba(63,122,79,.6)}
+.hero-art .ph img{width:100%;height:100%;object-fit:cover}
+.hero-art .chip{position:absolute;background:#fff;border-radius:18px;box-shadow:0 16px 32px -18px rgba(63,122,79,.5);padding:12px 16px;display:flex;align-items:center;gap:10px;font-weight:800;font-size:13px}
+.hero-art .chip .e{font-size:22px}.hero-art .chip.a{left:-16px;top:38px}.hero-art .chip.b{right:-12px;bottom:46px}
+
+.bar{background:var(--green);color:#fff;padding:20px 0}.bar .wrap{display:flex;justify-content:space-around;gap:20px;flex-wrap:wrap;text-align:center}
+.bar b{display:block;font-family:"Outfit";font-size:26px}.bar span{font-size:12px;color:#dff0e2}
+
+section.sec{padding:84px 0}
+.soft{background:var(--cream)}
+.sh{text-align:center;margin-bottom:46px}
+.sh .en{font-family:"Outfit";font-size:12px;letter-spacing:.2em;color:var(--green);font-weight:700;text-transform:uppercase}
+.sh h2{font-size:clamp(23px,4vw,33px);font-weight:900;margin-top:6px;line-height:1.5;color:var(--green-d)}.sh h2 .o{color:var(--green)}
+.sh p{color:var(--ink2);font-size:14px;margin-top:10px}
+
+.points{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pt{background:#fff;border-radius:26px;padding:36px 28px;text-align:center;box-shadow:0 18px 40px -30px rgba(63,122,79,.55);border:1px solid var(--line)}
+.pt .ic{width:78px;height:78px;border-radius:50%;background:var(--tint);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.pt h3{font-size:18px;font-weight:900;color:var(--green-d);margin-bottom:8px}.pt p{font-size:13.5px;color:var(--ink2);line-height:1.95}
+
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.svc .card{background:#fff;border-radius:20px;padding:26px 20px;border:1px solid var(--line);transition:.3s}.svc .card:hover{transform:translateY(-5px);box-shadow:0 18px 36px -26px rgba(63,122,79,.6)}
+.svc .ic{width:54px;height:54px;border-radius:16px;background:var(--tint);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.svc h4{font-size:15px;font-weight:900;color:var(--green-d);margin-bottom:6px}.svc p{font-size:12.5px;color:var(--ink2);line-height:1.85}
+
+.flow-wrap{max-width:920px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.fstep{background:#fff;border-radius:20px;padding:22px 12px;text-align:center;border:1px solid var(--line);position:relative}
+.fstep .n{width:42px;height:42px;border-radius:50%;background:var(--green);color:#fff;font-family:"Outfit";font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+.fstep h4{font-size:13px;font-weight:900;color:var(--green-d)}.fstep p{font-size:11px;color:var(--ink2);margin-top:4px;line-height:1.6}
+
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:920px;margin:0 auto}
+.ibox{background:#fff;border-radius:22px;padding:30px;border:1px solid var(--line)}
+.ibox h3{font-size:18px;font-weight:900;color:var(--green-d);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.ibox p{font-size:13.5px;color:var(--ink2);line-height:1.95}.ibox .area{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.ibox .area span{background:var(--tint);color:var(--green-d);font-weight:700;font-size:12.5px;padding:6px 13px;border-radius:99px}
+.ibox ul{list-style:none;margin-top:6px}.ibox li{font-size:13.5px;color:var(--ink2);padding:7px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between;gap:10px}.ibox li b{color:var(--green-d)}
+
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.vc{background:#fff;border-radius:22px;padding:28px;border:1px solid var(--line);box-shadow:0 16px 36px -30px rgba(63,122,79,.5)}
+.vc .stars{color:var(--gold);font-size:14px;letter-spacing:2px}.vc p{font-size:13.5px;color:var(--ink);line-height:1.95;margin:10px 0 14px}
+.vc .who{font-size:12px;color:var(--ink2);font-weight:700}
+
+.faq{max-width:820px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:12px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:800;font-size:15px;color:var(--green-d);display:flex;align-items:center;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:before{content:"Q";font-family:"Outfit";background:var(--green);color:#fff;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;font-size:13px}
+.faq .ans{padding:0 24px 22px 60px;font-size:13.5px;color:var(--ink2);line-height:1.95}
+
+.recruit{background:linear-gradient(120deg,var(--green),var(--green-d));color:#fff;border-radius:30px;padding:50px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;max-width:980px;margin:0 auto;position:relative;overflow:hidden}
+.recruit h3{font-size:clamp(22px,3.4vw,30px);font-weight:900;line-height:1.5}.recruit p{margin:14px 0 22px;font-size:14px;color:#e3f1e6}
+.recruit .rtags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.recruit .rtags span{background:rgba(255,255,255,.18);padding:6px 14px;border-radius:99px;font-size:12.5px;font-weight:700}
+.recruit .rbtn{display:inline-block;background:#fff;color:var(--green-d);padding:14px 30px;border-radius:99px;font-weight:800}
+.recruit .rart{aspect-ratio:1;border-radius:24px;overflow:hidden;box-shadow:0 20px 40px -20px rgba(0,0,0,.4)}.recruit .rart img{width:100%;height:100%;object-fit:cover}
+
+.company{max-width:760px;margin:0 auto;border-top:2px solid var(--green)}
+.company .tr{display:grid;grid-template-columns:170px 1fr;border-bottom:1px solid var(--line)}
+.company .th{padding:18px 20px;font-weight:900;color:var(--green-d);font-size:14px;background:var(--cream)}
+.company .td{padding:18px 20px;font-size:14px;color:var(--ink2)}
+
+.final{text-align:center;padding:90px 0;background:radial-gradient(circle at 50% 0,var(--peach),transparent 55%),var(--cream)}
+.final h2{font-size:clamp(24px,4.4vw,38px);font-weight:900;color:var(--green-d);line-height:1.5}.final p{margin:14px 0 10px;color:var(--ink2)}
+.final .tel{font-family:"Outfit";font-size:clamp(30px,6vw,46px);font-weight:700;color:var(--green-d);margin:14px 0 4px}
+.final .hours{font-size:13px;color:var(--ink2);margin-bottom:26px}
+.final .acts{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+footer{background:#34392f;color:#b9c0b0;padding:46px 0 26px}
+.foot-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.flogo .nm{font-weight:900;font-size:20px;color:#fff}.flogo .sub{font-size:12px;color:#9aa491;margin-top:4px}
+.foot-grid p{font-size:12.5px;margin-top:10px;max-width:320px;line-height:1.9}
+.fcols{display:flex;gap:40px}.fcol h5{font-family:"Outfit";font-size:12px;color:var(--green-l);margin-bottom:12px}.fcol a{display:block;font-size:13px;margin-bottom:8px}.fcol a:hover{color:#fff}
+.cp{margin-top:32px;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;text-align:center;font-size:11px;color:#86907d}
+
+.sticky{position:fixed;bottom:0;left:0;right:0;z-index:45;background:rgba(255,253,249,.97);box-shadow:0 -8px 24px -16px rgba(63,122,79,.5);padding:10px 16px;display:none;gap:10px;backdrop-filter:blur(8px)}
+.sticky.show{display:flex}.sticky a{flex:1;text-align:center;padding:13px;border-radius:99px;font-weight:800;font-size:14px}
+.sticky .t{background:var(--green);color:#fff}.sticky .c{background:#fff;color:var(--green-d);border:2px solid var(--green)}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s cubic-bezier(.2,.6,.3,1)}.reveal.in{opacity:1;transform:none}.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
+@media(max-width:880px){
+ nav{position:fixed;inset:0;background:rgba(255,253,249,.98);flex-direction:column;justify-content:center;gap:22px;transform:translateX(100%);transition:.4s;z-index:55}nav.open{transform:none}nav a{font-size:17px}.burger{display:flex}header{padding:13px 18px}.tel-btn{display:none}
+ .hero-grid{grid-template-columns:1fr;gap:36px}.points{grid-template-columns:1fr}.svc{grid-template-columns:1fr 1fr}.flow-wrap{grid-template-columns:1fr 1fr}.info-grid{grid-template-columns:1fr}.voices{grid-template-columns:1fr}.recruit{grid-template-columns:1fr;padding:34px}.recruit .rart{display:none}.company .tr{grid-template-columns:108px 1fr}
+ body{padding-bottom:64px}
+}
+</style>
+</head>
+<body>
+<header id="hdr">
+  <a href="#top" class="logo"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z" fill="#fff"/></svg></span><span><span class="nm">ひだまり訪問看護</span><br><span class="sub">VISITING NURSE STATION</span></span></a>
+  <nav id="nav">
+    <a href="#points" onclick="cn()">選ばれる理由</a>
+    <a href="#service" onclick="cn()">サービス</a>
+    <a href="#flow" onclick="cn()">ご利用の流れ</a>
+    <a href="#recruit" onclick="cn()">採用</a>
+    <a href="#contact" onclick="cn()" class="tel-btn">お問い合わせ</a>
+  </nav>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="badge reveal">🏠 医療保険・介護保険対応／24時間 緊急対応</div>
+      <h1 class="reveal d1">住み慣れたわが家で、<br><span class="hl">安心の療養</span>を。</h1>
+      <p class="lead reveal d1">看護師・理学療法士がご自宅へうかがい、医療処置から心のケアまで。ご本人とご家族に寄り添い、毎日の「困った」をやさしく支えます。</p>
+      <div class="acts reveal d2">
+        <a href="#contact" class="btn-lg">📞 無料で相談する</a>
+        <a href="#service" class="btn-line">サービスを見る</a>
+      </div>
+    </div>
+    <div class="hero-art reveal d1">
+      <div class="chip a"><span class="e">😊</span>ご家族も安心</div>
+      <div class="ph"><img src="https://images.unsplash.com/photo-1765896387387-0538bc9f997e?q=80&w=1000&auto=format&fit=crop" alt="笑顔で寄り添う看護師と利用者"></div>
+      <div class="chip b"><span class="e">🕐</span>24時間 対応</div>
+    </div>
+  </div>
+</section>
+
+<div class="bar"><div class="wrap">
+  <div><b class="out">24h</b><span>緊急時の電話対応</span></div>
+  <div><b class="out">2保険</b><span>医療保険・介護保険</span></div>
+  <div><b class="out">0円〜</b><span>ご相談・初回訪問相談</span></div>
+  <div><b class="out">多職種</b><span>看護師・PT/OT/ST連携</span></div>
+</div></div>
+
+<section class="sec" id="points">
+  <div class="wrap">
+    <div class="sh reveal"><div class="en">Reason</div><h2>ひだまりが<span class="o">選ばれる理由</span></h2></div>
+    <div class="points">
+      <div class="pt reveal"><div class="ic"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z" fill="#5a9b6b"/></svg></div><h3>心に寄り添うケア</h3><p>病気や障がいだけでなく、その方の暮らしと想いを大切に。ご本人とご家族の気持ちにそっと寄り添います。</p></div>
+      <div class="pt reveal d1"><div class="ic"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#5a9b6b" stroke-width="2"/><path d="M12 7v5l3 2" stroke="#5a9b6b" stroke-width="2" stroke-linecap="round"/></svg></div><h3>24時間の安心体制</h3><p>夜間・休日も緊急電話に対応。「何かあったら」の不安に、いつでも応えられる体制を整えています。</p></div>
+      <div class="pt reveal d2"><div class="ic"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M7 13a4 4 0 1 0 0-.01M17 13a4 4 0 1 0 0-.01M3 21a4 4 0 0 1 8 0M13 21a4 4 0 0 1 8 0" stroke="#5a9b6b" stroke-width="2" stroke-linecap="round"/></svg></div><h3>多職種で連携</h3><p>主治医・ケアマネジャー・リハビリ職と密に連携。チームで在宅生活をトータルに支えます。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec soft" id="service">
+  <div class="wrap">
+    <div class="sh reveal"><div class="en">Service</div><h2>訪問看護で<span class="o">できること</span></h2><p>医療的なケアから日常の支えまで、幅広く対応します。</p></div>
+    <div class="svc" id="svc"></div>
+  </div>
+</section>
+
+<section class="sec" id="flow">
+  <div class="wrap">
+    <div class="sh reveal"><div class="en">Flow</div><h2>ご利用までの<span class="o">流れ</span></h2><p>はじめての方も、まずはお電話一本から。費用はかかりません。</p></div>
+    <div class="flow-wrap" id="flow"></div>
+  </div>
+</section>
+
+<section class="sec soft">
+  <div class="wrap">
+    <div class="sh reveal"><div class="en">Area & Fee</div><h2>対応エリア・<span class="o">ご利用料金</span></h2></div>
+    <div class="info-grid">
+      <div class="ibox reveal">
+        <h3>🗺️ 対応エリア</h3>
+        <p>下記エリアを中心に訪問しています。エリア外の方もまずはご相談ください。</p>
+        <div class="area"><span>○○市</span><span>△△市</span><span>□□区</span><span>××町</span><span>周辺地域</span></div>
+      </div>
+      <div class="ibox reveal d1">
+        <h3>💴 ご利用料金の目安</h3>
+        <p>保険の種類により自己負担額が異なります。詳しくはお気軽にお問い合わせください。</p>
+        <ul>
+          <li>介護保険（要支援・要介護）<b>1〜3割負担</b></li>
+          <li>医療保険（疾患・状態により）<b>1〜3割負担</b></li>
+          <li>公費負担医療制度<b>対象の場合あり</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sh reveal"><div class="en">Voice</div><h2>ご利用者・ご家族の<span class="o">声</span></h2></div>
+    <div class="voices" id="voices"></div>
+  </div>
+</section>
+
+<section class="sec soft" id="recruit">
+  <div class="wrap">
+    <div class="recruit reveal">
+      <div>
+        <h3>わたしたちと、<br>在宅看護をしませんか。</h3>
+        <p>「一人ひとりにじっくり向き合いたい」そんな看護がここにあります。ブランクのある方、訪問未経験の方も、丁寧な同行研修で安心スタート。</p>
+        <div class="rtags"><span>正看護師</span><span>准看護師</span><span>理学療法士</span><span>作業療法士</span><span>言語聴覚士</span></div>
+        <a href="#contact" class="rbtn">採用について相談する →</a>
+      </div>
+      <div class="rart"><img src="https://images.unsplash.com/photo-1773227059522-acc3ae46abdc?q=80&w=800&auto=format&fit=crop" alt="やわらかな雰囲気のスタッフ"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sh reveal"><div class="en">FAQ</div><h2>よくある<span class="o">ご質問</span></h2></div>
+    <div class="faq" id="faq"></div>
+  </div>
+</section>
+
+<section class="sec soft" id="company">
+  <div class="wrap">
+    <div class="sh reveal"><div class="en">Company</div><h2>事業所概要</h2></div>
+    <div class="company reveal" id="company"></div>
+    <p style="text-align:center;margin-top:18px;font-size:12px;color:var(--ink2)">※本ページはサンプルです。事業所名・所在地・連絡先・料金等はすべて仮の内容です。</p>
+  </div>
+</section>
+
+<section class="final" id="contact">
+  <div class="wrap reveal">
+    <h2>まずは、お気軽にご相談ください。</h2>
+    <p>ご本人・ご家族・医療機関・ケアマネジャー様からのお問い合わせを承ります。</p>
+    <div class="tel out">0120-000-000</div>
+    <div class="hours">受付 9:00–18:00（土日祝を除く）／緊急時は24時間対応</div>
+    <div class="acts">
+      <a href="tel:0120000000" class="btn-lg">📞 電話で相談する</a>
+      <a href="#" class="btn-line">✉️ メールで問い合わせる</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div><div class="flogo"><div class="nm">ひだまり訪問看護ステーション</div><div class="sub">VISITING NURSE STATION HIDAMARI</div></div>
+      <p>住み慣れたわが家での療養生活を、看護の力でやさしく支えます。医療保険・介護保険対応。</p></div>
+    <div class="fcols">
+      <div class="fcol"><h5>Menu</h5><a href="#points">選ばれる理由</a><a href="#service">サービス</a><a href="#flow">ご利用の流れ</a><a href="#company">事業所概要</a></div>
+      <div class="fcol"><h5>Contact</h5><a href="tel:0120000000">0120-000-000</a><a href="#recruit">採用情報</a></div>
+    </div>
+  </div>
+  <div class="cp">© 2026 Hidamari Visiting Nurse Station — sample landing page.</div>
+</footer>
+
+<div class="sticky" id="sticky"><a href="tel:0120000000" class="t">📞 電話する</a><a href="#contact" class="c">相談する</a></div>
+
+<script>
+const svc=[
+ {t:"健康状態の観察",d:"血圧・体温・全身状態の確認、体調変化の早期発見。",p:"M3 12h4l2 5 4-10 2 5h4"},
+ {t:"医療処置",d:"点滴・注射・カテーテル・在宅酸素・褥瘡（床ずれ）ケア等。",p:"M12 6v12M6 12h12"},
+ {t:"服薬の管理",d:"お薬の飲み忘れ防止、管理方法のご提案と確認。",p:"M9 7h6v10H9zM12 7v10"},
+ {t:"リハビリ支援",d:"PT/OT/STによる機能訓練、生活動作のリハビリ。",p:"M5 19l5-5 4 4 5-7"},
+ {t:"緩和・ターミナルケア",d:"痛みをやわらげ、最期までその人らしい在宅生活を支援。",p:"M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"},
+ {t:"認知症ケア",d:"ご本人の安心と、ご家族の負担軽減に向けた支援。",p:"M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 8v4l3 2"},
+ {t:"清潔・入浴ケア",d:"入浴介助・清拭・口腔ケアなど、清潔を保つお手伝い。",p:"M4 12h16M7 12V7a5 5 0 0 1 10 0v5"},
+ {t:"ご家族の相談支援",d:"介護の不安や悩みに寄り添い、一緒に考えます。",p:"M7 9a4 4 0 1 0 0-.01M3 20a4 4 0 0 1 8 0M14 8h6M14 12h6M14 16h4"},
+];
+const sw=document.getElementById('svc');
+svc.forEach((s,i)=>{const d=document.createElement('div');d.className='card reveal'+(i%4?' d'+(i%4):'');d.innerHTML=`<div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5a9b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="${s.p}"/></svg></div><h4>${s.t}</h4><p>${s.d}</p>`;sw.appendChild(d)});
+const flow=[
+ {t:"お問い合わせ",d:"お電話・メールでご相談ください。"},
+ {t:"ご相談・ご訪問",d:"ご状況をうかがい、ご自宅へ。"},
+ {t:"主治医に相談",d:"訪問看護指示書を依頼します。"},
+ {t:"契約・計画",d:"ケア内容と日程を決定。"},
+ {t:"訪問開始",d:"安心の在宅ケアをスタート。"},
+];
+const fw=document.getElementById('flow');
+flow.forEach((f,i)=>{const d=document.createElement('div');d.className='fstep reveal'+(i%5?' d'+(i%3):'');d.innerHTML=`<div class="n out">${i+1}</div><h4>${f.t}</h4><p>${f.d}</p>`;fw.appendChild(d)});
+const voices=[
+ {s:"★★★★★",p:"夜中に容体が変わったとき、電話してすぐ来てくださって。家族だけでは抱えきれない不安を支えてもらいました。",w:"80代 ご利用者のご家族"},
+ {s:"★★★★★",p:"退院後の点滴や傷のケアを自宅でしてもらえて本当に助かりました。看護師さんの笑顔に毎回ほっとします。",w:"70代 ご利用者ご本人"},
+ {s:"★★★★★",p:"母の認知症のことも親身に相談にのってくれて、介護の負担がずいぶん軽くなりました。",w:"50代 ご家族"},
+];
+const vw=document.getElementById('voices');
+voices.forEach((v,i)=>{const d=document.createElement('div');d.className='vc reveal'+(i%3?' d'+(i%3):'');d.innerHTML=`<div class="stars">${v.s}</div><p>「${v.p}」</p><div class="who">${v.w}</div>`;vw.appendChild(d)});
+const faq=[
+ {q:"訪問看護はどんな人が利用できますか？",a:"病気や障がい、要介護状態などで、ご自宅での療養に医療的な支援が必要な方ならどなたでも。年齢やご病気の種類は問いません。まずはご相談ください。"},
+ {q:"費用はどのくらいかかりますか？",a:"医療保険・介護保険が適用され、自己負担は原則1〜3割です。状態や保険の種類により異なりますので、お見積りをご案内します。"},
+ {q:"主治医がいなくても利用できますか？",a:"訪問看護のご利用には主治医の「訪問看護指示書」が必要です。かかりつけ医がいない場合も、医療機関のご紹介など含めてサポートします。"},
+ {q:"夜間や急なときも対応してもらえますか？",a:"24時間の緊急電話対応を行っています。状態の急変時には、必要に応じて緊急訪問もいたします。"},
+ {q:"家族が留守でも訪問してもらえますか？",a:"はい、可能です。ご不在時の対応方法は、契約時にご相談のうえ決めさせていただきます。"},
+];
+const fq=document.getElementById('faq');
+faq.forEach((f,i)=>{const d=document.createElement('details');if(i===0)d.open=true;d.className='reveal';d.innerHTML=`<summary>${f.q}</summary><div class="ans">${f.a}</div>`;fq.appendChild(d)});
+const company=[
+ ["事業所名","ひだまり訪問看護ステーション（サンプル）"],
+ ["所在地","〒000-0000 ○○県○○市○○町0-0-0（仮）"],
+ ["電話 / FAX","0120-000-000 ／ 00-0000-0000（仮）"],
+ ["営業時間","9:00〜18:00（土日祝休）／緊急時24時間対応"],
+ ["サービス内容","訪問看護・訪問リハビリ・在宅ターミナルケア・認知症ケア 他"],
+ ["対応保険","医療保険・介護保険・各種公費負担医療制度"],
+ ["スタッフ","看護師／理学療法士／作業療法士／言語聴覚士 ほか"],
+];
+const ct=document.getElementById('company');
+company.forEach(r=>{const d=document.createElement('div');d.className='tr';d.innerHTML=`<div class="th">${r[0]}</div><div class="td">${r[1]}</div>`;ct.appendChild(d)});
+const hdr=document.getElementById('hdr'),sticky=document.getElementById('sticky');
+addEventListener('scroll',()=>{hdr.classList.toggle('scrolled',scrollY>40);sticky.classList.toggle('show',scrollY>620)});
+const burger=document.getElementById('burger'),nav=document.getElementById('nav');
+burger.addEventListener('click',()=>nav.classList.toggle('open'));function cn(){nav.classList.remove('open')}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
