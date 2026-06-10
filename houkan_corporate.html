@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>あおぞら訪問看護ステーション ｜ 地域の在宅医療を支える</title>
+<meta name="description" content="あおぞら訪問看護ステーション。看護師・リハビリ専門職が連携し、医療処置・健康管理・リハビリ・緩和ケア・認知症ケアを提供。医療機関・ケアマネジャーとの連携体制。医療保険・介護保険対応。【サンプルサイト】">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#2f6fb0;--blue-d:#1f4f86;--blue-l:#5b94d0;--teal:#1f9b9b;--bg:#ffffff;--soft:#f3f7fb;--tint:#e6eff8;--ink:#28323d;--ink2:#637180;--line:#e3eaf1}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.9;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.out{font-family:"Outfit",sans-serif}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 30px;width:100%}
+.util{background:var(--blue-d);color:#fff;font-size:12.5px}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;padding:8px 30px}
+.util .l{color:#cfe0f2}.util .r{display:flex;gap:18px;align-items:center}.util .r b{font-family:"Outfit";font-size:15px}
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:14px 30px;transition:.3s}
+.logo{display:flex;align-items:center;gap:11px}.logo .ic{width:40px;height:40px;border-radius:10px;background:var(--blue);display:flex;align-items:center;justify-content:center}
+.logo .nm{font-weight:900;font-size:19px;color:var(--blue-d)}.logo .sub{font-size:10px;color:var(--ink2);letter-spacing:.06em}
+nav{display:flex;gap:24px;align-items:center}nav a{font-size:13.5px;font-weight:700;color:var(--ink);transition:.3s}nav a:hover{color:var(--blue)}
+.cta-btn{background:var(--blue);color:#fff!important;padding:11px 20px;border-radius:6px;font-weight:700;font-size:13px;transition:.3s}.cta-btn:hover{background:var(--blue-d)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:60}.burger span{width:25px;height:2px;background:var(--blue)}
+.btn-lg{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;padding:16px 34px;border-radius:6px;font-weight:700;font-size:16px;transition:.3s;box-shadow:0 14px 30px -14px rgba(47,111,176,.7)}.btn-lg:hover{background:var(--blue-d);transform:translateY(-2px)}
+.btn-line{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--blue);color:var(--blue);padding:14px 28px;border-radius:6px;font-weight:700;font-size:15px}.btn-line:hover{background:var(--tint)}
+
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--soft),#fff)}
+.hero:before{content:"";position:absolute;top:-10%;right:-6%;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,var(--tint),transparent 70%)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:80px 0}
+.hero .ey{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);color:var(--blue-d);font-weight:700;font-size:12.5px;padding:7px 15px;border-radius:99px;margin-bottom:20px}
+.hero .ey .dot{width:8px;height:8px;border-radius:50%;background:var(--teal)}
+.hero h1{font-size:clamp(28px,5vw,48px);font-weight:900;line-height:1.42;color:var(--blue-d);letter-spacing:.01em}
+.hero h1 .o{color:var(--blue)}
+.hero p.lead{margin-top:20px;font-size:16px;color:var(--ink2);max-width:500px;line-height:2.05}
+.hero .acts{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+.hero-art{position:relative}
+.hero-art .ph{border-radius:12px;overflow:hidden;box-shadow:0 34px 70px -34px rgba(31,79,134,.55);aspect-ratio:4/3.6}
+.hero-art .ph img{width:100%;height:100%;object-fit:cover}
+.hero-art .stat{position:absolute;left:-20px;bottom:-22px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 22px;box-shadow:0 20px 40px -20px rgba(31,79,134,.4);display:flex;gap:18px}
+.hero-art .stat .s b{font-family:"Outfit";font-size:24px;color:var(--blue);display:block}.hero-art .stat .s span{font-size:11px;color:var(--ink2)}
+
+section.sec{padding:90px 0}
+.soft{background:var(--soft)}
+.sh{margin-bottom:50px}.sh.c{text-align:center}
+.sh .en{font-family:"Outfit";font-size:12px;letter-spacing:.22em;color:var(--teal);font-weight:700;text-transform:uppercase}
+.sh h2{font-size:clamp(23px,3.8vw,35px);font-weight:900;margin-top:8px;line-height:1.4;color:var(--blue-d)}.sh h2 .o{color:var(--blue)}
+.sh p{color:var(--ink2);font-size:14px;margin-top:12px;line-height:2}
+
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.fc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:36px 30px;border-top:4px solid var(--blue);transition:.3s}.fc:hover{box-shadow:0 24px 50px -32px rgba(31,79,134,.5);transform:translateY(-4px)}
+.fc .num{font-family:"Outfit";font-size:13px;color:var(--teal);font-weight:700;letter-spacing:.1em}.fc .ic{width:60px;height:60px;border-radius:12px;background:var(--tint);display:flex;align-items:center;justify-content:center;margin:14px 0 16px}
+.fc h3{font-size:19px;font-weight:900;color:var(--blue-d);margin-bottom:10px}.fc p{font-size:13.5px;color:var(--ink2);line-height:1.95}
+
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--line)}
+.svc .card{background:#fff;padding:30px 24px;transition:.3s}.svc .card:hover{background:var(--soft)}
+.svc .ic{width:50px;height:50px;border-radius:10px;background:var(--tint);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.svc h4{font-size:15px;font-weight:900;color:var(--blue-d);margin-bottom:6px}.svc p{font-size:12.5px;color:var(--ink2);line-height:1.85}
+
+.flow{counter-reset:s;max-width:880px;margin:0 auto}
+.frow{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:24px 0;border-bottom:1px solid var(--line);align-items:start}
+.frow .no{width:54px;height:54px;border-radius:50%;background:var(--blue);color:#fff;font-family:"Outfit";font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center}
+.frow h4{font-size:18px;font-weight:900;color:var(--blue-d)}.frow p{font-size:13.5px;color:var(--ink2);margin-top:4px}
+
+.connect{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:960px;margin:0 auto}
+.cbox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:34px}
+.cbox h3{font-size:19px;font-weight:900;color:var(--blue-d);margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.cbox p{font-size:13.5px;color:var(--ink2);line-height:1.95}
+.cbox .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.cbox .tags span{background:var(--tint);color:var(--blue-d);font-weight:700;font-size:12.5px;padding:6px 13px;border-radius:6px}
+
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:960px;margin:0 auto}
+.ibox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:32px}
+.ibox h3{font-size:18px;font-weight:900;color:var(--blue-d);margin-bottom:14px}.ibox .area{display:flex;flex-wrap:wrap;gap:8px}.ibox .area span{background:var(--soft);border:1px solid var(--line);color:var(--blue-d);font-weight:700;font-size:12.5px;padding:6px 13px;border-radius:6px}
+.ibox ul{list-style:none;margin-top:4px}.ibox li{font-size:13.5px;color:var(--ink2);padding:9px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between;gap:10px}.ibox li b{color:var(--blue-d)}
+
+.faq{max-width:840px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:700;font-size:15px;color:var(--blue-d);display:flex;align-items:center;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:before{content:"Q";font-family:"Outfit";background:var(--blue);color:#fff;width:26px;height:26px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex:none;font-size:13px}
+.faq .ans{padding:0 24px 22px 60px;font-size:13.5px;color:var(--ink2);line-height:1.95}
+
+.recruit{background:var(--blue-d);color:#fff;border-radius:14px;padding:48px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center;max-width:1000px;margin:0 auto}
+.recruit h3{font-size:clamp(21px,3.2vw,28px);font-weight:900;line-height:1.5}.recruit p{margin:12px 0 20px;font-size:14px;color:#cfe0f2}
+.recruit .rtags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.recruit .rtags span{background:rgba(255,255,255,.16);padding:6px 13px;border-radius:6px;font-size:12.5px;font-weight:700}
+.recruit .rbtn{display:inline-block;background:#fff;color:var(--blue-d);padding:14px 30px;border-radius:6px;font-weight:800}
+.recruit .rart{border-radius:10px;overflow:hidden;aspect-ratio:1}.recruit .rart img{width:100%;height:100%;object-fit:cover}
+
+.company{max-width:800px;margin:0 auto;border-top:2px solid var(--blue)}
+.company .tr{display:grid;grid-template-columns:180px 1fr;border-bottom:1px solid var(--line)}
+.company .th{padding:18px 22px;font-weight:900;color:var(--blue-d);font-size:14px;background:var(--soft)}
+.company .td{padding:18px 22px;font-size:14px;color:var(--ink2)}
+
+.final{text-align:center;padding:84px 0;background:linear-gradient(120deg,var(--blue),var(--teal));color:#fff}
+.final h2{font-size:clamp(24px,4.4vw,38px);font-weight:900;line-height:1.45}.final p{margin:14px 0 6px;color:#e4f0fb}
+.final .tel{font-family:"Outfit";font-size:clamp(30px,6vw,48px);font-weight:700;margin:10px 0 2px}
+.final .hours{font-size:13px;color:#dbeafb;margin-bottom:26px}
+.final .acts{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.final .btn-lg{background:#fff;color:var(--blue-d)}.final .btn-line{border-color:rgba(255,255,255,.7);color:#fff}.final .btn-line:hover{background:rgba(255,255,255,.12)}
+
+footer{background:#1a2a3a;color:#9fb1c4;padding:48px 0 26px}
+.foot-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.flogo .nm{font-weight:900;font-size:20px;color:#fff}.flogo .sub{font-size:12px;color:#8499ad;margin-top:4px}
+.foot-grid p{font-size:12.5px;margin-top:10px;max-width:330px;line-height:1.9}
+.fcols{display:flex;gap:42px}.fcol h5{font-family:"Outfit";font-size:12px;color:var(--blue-l);margin-bottom:12px;letter-spacing:.08em}.fcol a{display:block;font-size:13px;margin-bottom:8px}.fcol a:hover{color:#fff}
+.cp{margin-top:34px;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;text-align:center;font-size:11px;color:#6f8198}
+
+.sticky{position:fixed;bottom:0;left:0;right:0;z-index:45;background:#fff;border-top:1px solid var(--line);padding:10px 16px;display:none;gap:10px;box-shadow:0 -8px 24px -16px rgba(31,79,134,.4)}
+.sticky.show{display:flex}.sticky a{flex:1;text-align:center;padding:13px;border-radius:6px;font-weight:800;font-size:14px}.sticky .t{background:var(--blue);color:#fff}.sticky .c{background:#fff;color:var(--blue-d);border:1.5px solid var(--blue)}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s cubic-bezier(.2,.6,.3,1)}.reveal.in{opacity:1;transform:none}.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}
+@media(max-width:880px){
+ .util{display:none}nav{position:fixed;inset:0;background:rgba(255,255,255,.98);flex-direction:column;justify-content:center;gap:24px;transform:translateX(100%);transition:.4s;z-index:55}nav.open{transform:none}nav a{font-size:18px}.burger{display:flex}header{padding:13px 18px}
+ .hero-grid{grid-template-columns:1fr;gap:40px;padding:54px 0}.feat{grid-template-columns:1fr}.svc{grid-template-columns:1fr 1fr}.connect,.info-grid{grid-template-columns:1fr}.recruit{grid-template-columns:1fr;padding:34px}.recruit .rart{display:none}.company .tr{grid-template-columns:118px 1fr}
+ body{padding-bottom:64px}.hero-art .stat{position:static;margin-top:16px}
+}
+</style>
+</head>
+<body>
+<div class="util"><div class="wrap"><span class="l">医療機関・ケアマネジャー様の連携窓口も承ります</span><span class="r">受付 9:00–18:00（土日祝休）<b class="out">0120-000-000</b></span></div></div>
+<header id="hdr">
+  <a href="#top" class="logo"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5 5.5.8-4 3.9 1 5.5L12 21l-5 2.6 1-5.5-4-3.9 5.5-.8L12 3z" fill="#fff" opacity=".25"/><path d="M12 7v10M7 12h10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></span><span><span class="nm">あおぞら訪問看護</span><br><span class="sub">AOZORA VISITING NURSE STATION</span></span></a>
+  <nav id="nav">
+    <a href="#feature" onclick="cn()">特長</a>
+    <a href="#service" onclick="cn()">サービス</a>
+    <a href="#flow" onclick="cn()">ご利用の流れ</a>
+    <a href="#connect" onclick="cn()">連携</a>
+    <a href="#recruit" onclick="cn()">採用</a>
+    <a href="#contact" onclick="cn()" class="cta-btn">お問い合わせ</a>
+  </nav>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="ey reveal"><span class="dot"></span>医療保険・介護保険対応／24時間 緊急対応体制</div>
+      <h1 class="reveal d1">地域の<span class="o">在宅医療</span>を、<br>看護の力で支える。</h1>
+      <p class="lead reveal d1">看護師とリハビリ専門職がチームで連携し、ご自宅での療養を医療・生活の両面からサポート。主治医・ケアマネジャーとの密な連携で、切れ目のないケアを実現します。</p>
+      <div class="acts reveal d2">
+        <a href="#contact" class="btn-lg">無料で相談する</a>
+        <a href="#service" class="btn-line">サービス内容</a>
+      </div>
+    </div>
+    <div class="hero-art reveal d1">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1631815590058-860e4f83c1e8?q=80&w=1000&auto=format&fit=crop" alt="健康状態を確認する看護師"></div>
+      <div class="stat">
+        <div class="s"><b class="out">24h</b><span>緊急対応</span></div>
+        <div class="s"><b class="out">2保険</b><span>医療・介護</span></div>
+        <div class="s"><b class="out">多職種</b><span>連携体制</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="feature">
+  <div class="wrap">
+    <div class="sh c reveal"><div class="en">Features</div><h2>あおぞらの<span class="o">3つの特長</span></h2></div>
+    <div class="feat">
+      <div class="fc reveal"><div class="num out">01</div><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2f6fb0" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>24時間の対応体制</h3><p>夜間・休日も看護師が電話対応。状態の急変時には緊急訪問で迅速に対応します。</p></div>
+      <div class="fc reveal d1"><div class="num out">02</div><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2f6fb0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11a4 4 0 1 0 0-.01M17 11a4 4 0 1 0 0-.01M3 20a4 4 0 0 1 8 0M13 20a4 4 0 0 1 8 0"/></svg></div><h3>多職種連携</h3><p>主治医・ケアマネジャー・リハビリ職と情報を共有し、チームで在宅生活を支えます。</p></div>
+      <div class="fc reveal d2"><div class="num out">03</div><div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2f6fb0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div><h3>専門性の高いケア</h3><p>経験豊富な看護師が、医療処置からターミナルケアまで安全・確実に対応します。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec soft" id="service">
+  <div class="wrap">
+    <div class="sh c reveal"><div class="en">Service</div><h2>提供する<span class="o">看護サービス</span></h2><p>医療的ケアから日常生活の支援まで、幅広く対応します。</p></div>
+    <div class="svc" id="svc"></div>
+  </div>
+</section>
+
+<section class="sec" id="flow">
+  <div class="wrap">
+    <div class="sh c reveal"><div class="en">Flow</div><h2>ご利用までの<span class="o">流れ</span></h2></div>
+    <div class="flow" id="flowList"></div>
+  </div>
+</section>
+
+<section class="sec soft" id="connect">
+  <div class="wrap">
+    <div class="sh c reveal"><div class="en">Cooperation</div><h2>医療機関・ケアマネジャー様へ</h2></div>
+    <div class="connect">
+      <div class="cbox reveal"><h3>🏥 医療機関の皆さまへ</h3><p>退院後の継続看護・在宅での医療処置を、主治医の指示書に基づき確実に実施します。報告書の提出など、連携を丁寧に行います。</p><div class="tags"><span>退院支援</span><span>在宅医療処置</span><span>状態報告</span><span>看取り対応</span></div></div>
+      <div class="cbox reveal d1"><h3>📋 ケアマネジャーの皆さまへ</h3><p>利用者様の状態変化を迅速に共有し、サービス担当者会議にも積極的に参加。ケアプランに沿った看護を提供します。</p><div class="tags"><span>情報共有</span><span>担当者会議</span><span>計画連携</span><span>迅速報告</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sh c reveal"><div class="en">Area & Fee</div><h2>対応エリア・<span class="o">ご利用料金</span></h2></div>
+    <div class="info-grid">
+      <div class="ibox reveal"><h3>対応エリア</h3><div class="area"><span>○○市</span><span>△△市</span><span>□□区</span><span>××町</span><span>周辺地域</span></div><p style="margin-top:12px;font-size:13px;color:var(--ink2)">エリア外の方もまずはご相談ください。</p></div>
+      <div class="ibox reveal d1"><h3>ご利用料金の目安</h3><ul><li>介護保険（要支援・要介護）<b>1〜3割負担</b></li><li>医療保険（疾患・状態により）<b>1〜3割負担</b></li><li>公費負担医療制度<b>対象の場合あり</b></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec soft" id="recruit">
+  <div class="wrap">
+    <div class="recruit reveal">
+      <div>
+        <h3>地域医療を、ともに支える<br>仲間を募集しています。</h3>
+        <p>訪問看護の経験がない方も、同行研修と多職種サポートで安心してスタートできます。働きやすい環境づくりに力を入れています。</p>
+        <div class="rtags"><span>正看護師</span><span>准看護師</span><span>理学療法士</span><span>作業療法士</span><span>言語聴覚士</span></div>
+        <a href="#contact" class="rbtn">採用について相談する →</a>
+      </div>
+      <div class="rart"><img src="https://images.unsplash.com/photo-1666887360726-f55472d96c34?q=80&w=800&auto=format&fit=crop" alt="記録を確認する医療スタッフ"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sh c reveal"><div class="en">FAQ</div><h2>よくある<span class="o">ご質問</span></h2></div>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+<section class="sec soft" id="company">
+  <div class="wrap">
+    <div class="sh c reveal"><div class="en">Company</div><h2>事業所概要</h2></div>
+    <div class="company reveal" id="companyTable"></div>
+    <p style="text-align:center;margin-top:18px;font-size:12px;color:var(--ink2)">※本ページはサンプルです。事業所名・所在地・連絡先・料金等はすべて仮の内容です。</p>
+  </div>
+</section>
+
+<section class="final" id="contact">
+  <div class="wrap reveal">
+    <h2>お問い合わせ・ご相談</h2>
+    <p>ご本人・ご家族・医療機関・ケアマネジャー様、どなたでもお気軽にどうぞ。</p>
+    <div class="tel out">0120-000-000</div>
+    <div class="hours">受付 9:00–18:00（土日祝を除く）／緊急時は24時間対応</div>
+    <div class="acts">
+      <a href="tel:0120000000" class="btn-lg">電話で相談する</a>
+      <a href="#" class="btn-line">メールで問い合わせる</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div><div class="flogo"><div class="nm">あおぞら訪問看護ステーション</div><div class="sub out">AOZORA VISITING NURSE STATION</div></div>
+      <p>看護師・リハビリ専門職が連携し、地域の在宅医療を支えます。医療保険・介護保険対応。</p></div>
+    <div class="fcols">
+      <div class="fcol"><h5>MENU</h5><a href="#feature">特長</a><a href="#service">サービス</a><a href="#flow">ご利用の流れ</a><a href="#company">事業所概要</a></div>
+      <div class="fcol"><h5>CONTACT</h5><a href="tel:0120000000">0120-000-000</a><a href="#recruit">採用情報</a><a href="#connect">連携について</a></div>
+    </div>
+  </div>
+  <div class="cp">© 2026 Aozora Visiting Nurse Station — sample landing page.</div>
+</footer>
+
+<div class="sticky" id="sticky"><a href="tel:0120000000" class="t">電話する</a><a href="#contact" class="c">お問い合わせ</a></div>
+
+<script>
+const svc=[
+ {t:"健康状態の観察",d:"バイタル測定・全身状態の確認、体調変化の早期発見。",p:"M3 12h4l2 5 4-10 2 5h4"},
+ {t:"医療処置",d:"点滴・注射・カテーテル管理・在宅酸素・褥瘡ケア等。",p:"M12 6v12M6 12h12"},
+ {t:"服薬管理",d:"内服管理・残薬確認・飲み忘れ防止の支援。",p:"M9 7h6v10H9zM12 7v10"},
+ {t:"リハビリテーション",d:"PT/OT/STによる機能訓練・生活動作の練習。",p:"M5 19l5-5 4 4 5-7"},
+ {t:"緩和・ターミナルケア",d:"症状緩和と、在宅での看取りまでの支援。",p:"M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"},
+ {t:"認知症ケア",d:"ご本人の安定と、ご家族の負担軽減を支援。",p:"M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 8v4l3 2"},
+ {t:"清潔・入浴ケア",d:"入浴介助・清拭・口腔ケア・排泄ケア。",p:"M4 12h16M7 12V7a5 5 0 0 1 10 0v5"},
+ {t:"療養・介護相談",d:"在宅療養・介護の不安や悩みに専門職が対応。",p:"M7 9a4 4 0 1 0 0-.01M3 20a4 4 0 0 1 8 0M14 8h6M14 12h6"},
+];
+const sw=document.getElementById('svc');
+svc.forEach((s,i)=>{const d=document.createElement('div');d.className='card reveal'+(i%4?' d'+(i%4):'');d.innerHTML=`<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2f6fb0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="${s.p}"/></svg></div><h4>${s.t}</h4><p>${s.d}</p>`;sw.appendChild(d)});
+const flow=[
+ {t:"お問い合わせ",d:"お電話・メールにてご相談ください。医療機関・ケアマネジャー様からのご紹介も承ります。"},
+ {t:"ご相談・ヒアリング",d:"ご本人・ご家族のご状況やご希望をうかがいます。必要に応じてご自宅へ訪問します。"},
+ {t:"主治医に相談（指示書）",d:"主治医へ「訪問看護指示書」の発行を依頼します。かかりつけ医がいない場合もご相談ください。"},
+ {t:"契約・看護計画",d:"サービス内容・訪問日程を決め、看護計画書を作成。ご納得のうえご契約いただきます。"},
+ {t:"訪問開始",d:"計画に沿って訪問看護をスタート。状態にあわせて随時見直します。"},
+];
+const fw=document.getElementById('flowList');
+flow.forEach((f,i)=>{const d=document.createElement('div');d.className='frow reveal'+(i%2?' d1':'');d.innerHTML=`<div class="no out">${i+1}</div><div><h4>${f.t}</h4><p>${f.d}</p></div>`;fw.appendChild(d)});
+const faq=[
+ {q:"訪問看護はどんな人が利用できますか？",a:"病気・障がい・要介護状態などで、ご自宅での療養に医療的支援が必要な方ならどなたでも。年齢や疾患は問いません。"},
+ {q:"費用はどのくらいかかりますか？",a:"医療保険・介護保険が適用され、自己負担は原則1〜3割です。状態や保険により異なるため、個別にご案内します。"},
+ {q:"主治医がいなくても利用できますか？",a:"ご利用には主治医の「訪問看護指示書」が必要です。かかりつけ医がいない場合も、医療機関のご紹介を含めサポートします。"},
+ {q:"医療機関からの紹介はできますか？",a:"可能です。退院前カンファレンスへの参加や、退院後の継続看護にも対応します。連携窓口へお問い合わせください。"},
+ {q:"夜間や急なときも対応してもらえますか？",a:"24時間の緊急電話対応を行い、必要時には緊急訪問も実施します。"},
+];
+const fq=document.getElementById('faqList');
+faq.forEach((f,i)=>{const d=document.createElement('details');if(i===0)d.open=true;d.className='reveal';d.innerHTML=`<summary>${f.q}</summary><div class="ans">${f.a}</div>`;fq.appendChild(d)});
+const company=[
+ ["事業所名","あおぞら訪問看護ステーション（サンプル）"],
+ ["所在地","〒000-0000 ○○県○○市○○町0-0-0（仮）"],
+ ["電話 / FAX","0120-000-000 ／ 00-0000-0000（仮）"],
+ ["営業時間","9:00〜18:00（土日祝休）／緊急時24時間対応"],
+ ["サービス内容","訪問看護・訪問リハビリ・在宅ターミナルケア・認知症ケア 他"],
+ ["対応保険","医療保険・介護保険・各種公費負担医療制度"],
+ ["人員体制","管理者（看護師）・看護師・理学療法士・作業療法士・言語聴覚士 ほか"],
+];
+const ct=document.getElementById('companyTable');
+company.forEach(r=>{const d=document.createElement('div');d.className='tr';d.innerHTML=`<div class="th">${r[0]}</div><div class="td">${r[1]}</div>`;ct.appendChild(d)});
+const hdr=document.getElementById('hdr'),sticky=document.getElementById('sticky');
+addEventListener('scroll',()=>{sticky.classList.toggle('show',scrollY>620)});
+const burger=document.getElementById('burger'),nav=document.getElementById('nav');
+burger.addEventListener('click',()=>nav.classList.toggle('open'));function cn(){nav.classList.remove('open')}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
